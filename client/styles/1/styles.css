@@ -1,0 +1,244 @@
+/*
+Joseph Salomone
+660658959
+salomj@rpi.edu
+1/styles.css
+*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#All
+{
+	background-color: yellow;
+	width: 550px;
+	height: auto;
+	min-height: 200px;
+	margin: 5px;
+}
+
+#jquery-form
+{
+	visibility: hidden;
+	width: 500px;
+}
+
+label, input, textarea
+{
+	display:block;
+	resize: none;
+}
+
+input, textarea .text
+{
+	margin-bottom:12px;
+	width:95%;
+	padding: .4em;
+}
+
+fieldset
+{
+	padding:0;
+	border:0;
+	margin-top:25px;
+}
+
+h1, h2
+{
+	font-weight: normal;
+	font-size: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#Header
+{
+	position: relative;
+	clear: both;
+	margin-top: 3ex;
+	margin-bottom: 6ex;
+	width: 100%;
+}
+
+#Header h1
+{
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+#Header h2
+{
+	position: absolute;
+	top: -3ex;
+	right: 0px;
+}
+
+#Messages
+{
+	clear: both;
+	padding: 0px 20px 0px 20px;
+}
+
+#MessageBox
+{
+	word-wrap: break-word;
+	height: 300px;
+	border: 2px solid green;
+	background-color: #D0D0D0;
+	padding: 0px 5px 0px 5px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#Send
+{
+	clear: both;
+	padding: 10px 20px 0px 20px;
+}
+
+#Upload-File
+{
+	cursor: pointer;
+}
+
+span:not(.UserMe)
+{
+	cursor: pointer;
+}
+
+#SendMessage textarea
+{
+	resize: none;
+	float: left;
+	border: 2px solid green;
+	height: 40px;
+	width: 85%;
+}
+
+#SendMessage input
+{
+	float: right;
+	height: 40px;
+	width: 10%;
+	text-transform: uppercase;
+}
+
+#Users
+{
+	clear: both;
+	padding: 10px 20px 10px 20px;
+}
+
+#UserList
+{
+	border: 2px solid green;
+	background-color: #D0D0D0;
+	height: 100px;
+	word-wrap: break-word;
+	padding: 0px 5px 0px 5px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#UserList ul
+{
+	width: auto;
+}
+
+#UserList li
+{
+	display: inline;	
+}
+
+#UserList li:after
+{
+  content: ", ";
+}
+
+#UserList li:last-child:after
+{
+    content: "";
+}
+
+#clear
+{
+	clear: both;
+}
+
+.UserMe
+{
+	color: red;
+}
+.User0
+{
+	color: cyan;
+}
+.User1
+{
+	color: blue;
+}
+.User2
+{
+	color: darkblue;
+}
+.User3
+{
+	color: lightblue;
+}
+.User4
+{
+	color: purple;
+}
+.User5
+{
+	color: #DDDD00;
+}
+.User6
+{
+	color: lime;
+}
+.User7
+{
+	color: black;
+}
+.User8
+{
+	color: fuchsia;
+}
+.User9
+{
+	color: white;
+}
+.User10
+{
+	color: silver;
+}
+.User11
+{
+	color: grey;
+}
+.User12
+{
+	color: orange;
+}
+.User13
+{
+	color: brown;
+}
+.User14
+{
+	color: maroon;
+}
+.User15
+{
+	color: green;
+}
+.User16
+{
+	color: olive;
+}
