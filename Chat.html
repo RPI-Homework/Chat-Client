@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<!-- 
+Joseph Salomone
+660658959
+salomj@rpi.edu
+Chat.html
+-->
+<html lang="en">
+	<head>
+		<title> The Ultimate Chat Client </title>
+		<meta charset="utf-8" />
+		<link id="JqueryCSS" rel="stylesheet" href="styles/1/jquery-ui-1.8.19.css" />
+		<link id="MainCSS" rel="stylesheet" href="styles/1/styles.css" />
+		<link id="PageCSS" rel="stylesheet" href="styles/1/broadcast.css" />
+	</head>
+	<body>
+		<div id="All">
+
+			<div id="Header">
+				<h1> The Ultimate Chat Client </h1>
+				<h2> implemented by salomj </h2>
+			</div><!-- end Header -->
+
+			<div id="Messages">
+				<div id="MessageBox">
+					<p>In order to use "The Ultimate Chat Client", you must either use a broswer which supports javascript or enable javascript for your browser.</p>
+				</div><!-- end MessageBox -->
+			</div><!-- end Messages -->
+
+			<div id="Send">
+				<h1> Logged in as "USERNAME" (type message and hit ENTER or click SEND) </h1>
+				<p id="Upload-File">Upload File</p>
+				<form id="SendMessage">
+					<textarea name="Message"></textarea>
+					<input type="submit" value="Send" />
+				</form><!-- end SendMessage -->
+			</div><!-- end Send -->
+			
+			<div id="Users">
+				<h1> Who's logged in (click on a name to send a private message) </h1>
+				<div id="UserList">
+					<ul>
+					</ul>
+				</div><!-- end UserList -->
+			</div><!-- end Users -->
+			
+			<div id="jquery-form">
+				<div id="login-form" title="LogIn">
+					<p class="validateTips">All form fields are required.</p>
+					<form>
+						<fieldset>
+							<label for="name">UserName</label>
+							<input type="text" name="name" id="name" value="" class="text ui-widget-content ui-corner-all" />
+							<label for="host">Host</label>
+							<input type="text" name="host" id="host" value="ws://localhost:8787/" class="text ui-widget-content ui-corner-all" />
+						</fieldset>
+					</form>
+				</div>
+				<div id="upload-form" title="Upload File">
+					<form>
+						<p class="validateTips">Please select a file.</p>
+						<fieldset>
+							<label for="file-location">File</label>
+							<input type="file" name="file" id="file-location" accept="image/*" class="text ui-widget-content ui-corner-all" />
+						</fieldset>
+					</form>
+				</div>
+				<div id="private-form" title="Send Message">
+					<p class="validateTips">Send a message.</p>
+					<form>
+						<fieldset>
+							<label for="UserNames">UserNames (space delimited)</label>
+							<input type="text" name="UserNames" id="UserNames" value="" class="text ui-widget-content ui-corner-all" />
+							<label for="message">Message</label>
+							<textarea name="message" id="message" class="text ui-widget-content ui-corner-all"></textarea>
+						</fieldset>
+					</form>
+				</div>
+				<div id="loading-form" title="Loading">
+					<div class="progressbar"></div>
+					<p>Loading...</p>
+				</div>
+			</div>
+
+			<div id="clear"></div>
+		</div><!-- end All -->
+		<script src="scripts/jquery-1.7.2.min.js"></script>
+		<script src="scripts/jquery-ui-1.8.19.custom.min.js"></script>
+		<script src="scripts/chat-server.js"></script>
+	</body>
+</html>
