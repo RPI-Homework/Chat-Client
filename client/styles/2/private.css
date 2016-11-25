@@ -1,0 +1,28 @@
+/*
+Joseph Salomone
+660658959
+salomj@rpi.edu
+2/private.css
+*/
+#Users
+{
+	position: fixed;
+	left: -9999px;
+}
+
+#Messages
+{
+	right: 0px;
+	border-right: 2px solid black;
+}
+
+#Send
+{
+	right: 0px;
+	border-right: 2px solid black;
+}
+
+span:not(.UserMe)
+{
+	cursor: text;
+}

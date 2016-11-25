@@ -1,0 +1,16 @@
+/*
+Joseph Salomone
+660658959
+salomj@rpi.edu
+4/private.css
+*/
+#Users
+{
+	position: fixed;
+	left: -9999px;
+}
+
+span:not(.UserMe)
+{
+	cursor: text;
+}
